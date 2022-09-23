@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
+
+
     <body>
         <header class="header">
             <div class="container nav-flex">
@@ -32,14 +34,18 @@
                 </ul>
             </div>
         </header>
+
+
         <main>
             <section class="hero">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button">Замовити послугу</button>
+                <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>
             </section>
+
+
             <section class="features-section">
                 <div class="container">
-                    <h2 hidden>Our advantages</h2>
+                    <h2 class="visually-hidden">Our advantages</h2>
                     <ul class="features-list list">
                         <li class="features-item">
                             <div class="features-icon-fon">
@@ -76,16 +82,27 @@
                     </ul>
                 </div>
             </section>
+
+
             <section class="work-section">
                 <div class="container">
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="work-list list">
-                        <li class="work-item"><img src="./images/box1.jpg" width="370" height="294" alt="написання коду" /></li>
-                        <li class="work-item"><img src="./images/box2.jpg" width="370" height="294" alt="перевірка за допомогою смартфона" /></li>
-                        <li class="work-item"><img src="./images/box3.jpg" width="370" height="294" alt="дизайн" /></li>
+                        <li class="work-item">
+                            <img src="./images/box1.jpg" width="370" height="294" alt="написання коду"/>
+                            <p class="work-text">ДЕКСТОПНІ ДОДАТКИ</p></li>
+                        <li class="work-item">
+                            <img src="./images/box2.jpg" width="370" height="294" alt="перевірка за допомогою смартфона"/>
+                            <p class="work-text">МОБІЛЬНІ ДОДАТКИ</p></li>
+                        <li class="work-item">
+                            <img src="./images/box3.jpg" width="370" height="294" alt="дизайн"/>
+                            <p class="work-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></li>
                     </ul>
                 </div>
             </section>
+
+
+
             <section class="team-section">
                 <div class="container">
                     <h2 class="section-title">Наша команда</h2>
@@ -145,6 +162,9 @@
                     </ul>
                 </div>
             </section>
+
+
+
             <!--CLIENTS-->
             <section class="client-section">
                 <div class="container">
@@ -160,6 +180,8 @@
                 </div>
             </section>
         </main>
+
+
 
         <footer class="footer">
             <div class="container">
@@ -186,5 +208,12 @@
                 </div>
             </div>    
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p></p>
+                <button data-modal-close></button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
